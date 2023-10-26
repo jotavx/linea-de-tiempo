@@ -1,0 +1,105 @@
+@media (max-width: 576px) {
+  /*Header*/
+
+  .titulo-pagina {
+    font-size: 17px;
+  }
+
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-text {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+  }
+
+  /*Carousel*/
+  .container-fluid {
+    width: 90%;
+    margin: 250px auto;
+  }
+
+  .carousel-container {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    padding: 20px;
+  }
+
+  .carousel-item {
+    height: 600px;
+  }
+
+  .carousel-inner {
+    height: 500px;
+    overflow-y: scroll; /* Esto agrega una barra de desplazamiento vertical cuando el contenido excede la altura */
+  }
+
+  .carousel-control {
+    height: 50px !important;
+    margin-top: 250px;
+  }
+
+  /*Slide*/
+
+  .slide-iframe {
+    padding: 25px;
+    max-width: 350px;
+    max-height: 100vh;
+  }
+
+  .slide-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .slide-image {
+    border-radius: 20px;
+    max-width: 350px;
+  }
+
+  .year {
+    font-family: "PT Sans Narrow", sans-serif;
+    color: #3d7ddd;
+    text-shadow: 1px 1px 2px #000000;
+    font-weight: 900;
+    font-size: 40px;
+  }
+
+  .title {
+    font-family: "PT Sans Narrow", sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #000000;
+    text-shadow: 1px 1px 2px #fffdfd;
+    background-color: rgba(248, 248, 255, 0.527);
+  }
+
+  .description {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px #ffffff;
+    background-color: rgba(248, 248, 255, 0.527);
+  }
+
+  /*Timeline*/
+
+  .vis-item-content {
+    font-size: 12px;
+  }
+
+  /*Button Panel*/
+  #zoomIn,
+  #zoomOut {
+    display: none;
+  }
+}
