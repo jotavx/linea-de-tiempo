@@ -139,6 +139,15 @@ function ajustarZoomMax() {
   }
 }
 
+// Selecciona el elemento .carousel-inner
+var carouselInner = document.querySelector(".carousel-inner");
+
+// Agrega un controlador de eventos para el evento "slide.bs.carousel"
+$("#myCarousel").on("slide.bs.carousel", function (event) {
+  // Restablece la posición del scroll en el carrusel al principio
+  carouselInner.scrollTop = 0;
+});
+
 function scrollToYear() {
   var year = yearInput.value;
 
