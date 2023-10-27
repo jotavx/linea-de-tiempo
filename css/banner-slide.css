@@ -21,6 +21,15 @@
 
 /*Efectos transición*/
 
+.carousel-fade .carousel-item {
+  transition: opacity 1.5s ease-in-out; /* Ajusta la duración y el tipo de transición según tus preferencias */
+  opacity: 0; /* Establece la opacidad inicial en 0 para que los elementos se desvanezcan al entrar */
+}
+
+.carousel-fade .carousel-item.active {
+  opacity: 1; /* Establece la opacidad en 1 para que el elemento activo sea completamente visible */
+}
+
 /* Botones Slider */
 
 .carousel-control-prev-icon {
