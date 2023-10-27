@@ -195,3 +195,11 @@ yearInput.addEventListener("input", function () {
   // Borra cualquier mensaje de error existente cuando se modifica el input
   errorMessage.textContent = "";
 });
+
+var yearInput = document.getElementById("yearInput");
+var timelineContainer = document.getElementById("timeline"); // Reemplaza con el ID de tu contenedor de la línea de tiempo
+
+yearInput.addEventListener("blur", function () {
+  // Cuando el campo de entrada pierde el foco (el teclado virtual se cierra), vuelve a enfocar la línea de tiempo
+  timelineContainer.focus();
+});
