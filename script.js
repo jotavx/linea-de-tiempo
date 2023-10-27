@@ -29,6 +29,7 @@ var items = new vis.DataSet([
 // Configurar las opciónes de la línea de tiempo de vis.js
 var container = document.getElementById("timeline");
 var options = {
+  animation: false,
   zoomable: true,
   orientation: "top",
   stack: false,
