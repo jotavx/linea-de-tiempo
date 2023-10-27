@@ -139,15 +139,7 @@ function ajustarZoomMax() {
   }
 }
 
-// Selecciona el elemento .carousel-inner
-var carouselInner = document.querySelector(".carousel-inner");
-
-// Agrega un controlador de eventos para el evento "slide.bs.carousel"
-$("#myCarousel").on("slide.bs.carousel", function (event) {
-  // Restablece la posición del scroll en el carrusel al principio
-  carouselInner.scrollTop = 0;
-});
-
+//Funcion para buscar por año
 function scrollToYear() {
   var year = yearInput.value;
 
@@ -194,4 +186,14 @@ yearInput.addEventListener("keyup", function (event) {
 yearInput.addEventListener("input", function () {
   // Borra cualquier mensaje de error existente cuando se modifica el input
   errorMessage.textContent = "";
+});
+
+/////////////////////////////////////////////////////
+
+//Funcion para ajustar scroll
+document.getElementById("adjustScroll").addEventListener("click", function () {
+  var targetDiv = document.getElementById("myCarousel");
+
+  // Scroll hacia el div de destino
+  targetDiv.scrollIntoView({ behavior: "smooth" }); // Usa "auto" para un desplazamiento instantáneo
 });

@@ -51,20 +51,3 @@ svg {
     #2aabe7
   );
 }
-
-.error-message {
-  font-size: 12px;
-  color: rgb(178, 32, 32);
-  margin: 4px 0 0 0;
-}
-
-#yearInput {
-  width: 100px; /* Cambia el ancho según tus preferencias */
-  height: 24px; /* Cambia la altura según tus preferencias */
-}
-
-#yearInput::placeholder {
-  font-size: 10px; /* Cambia el tamaño de la fuente del placeholder */
-  color: #888; /* Cambia el color del placeholder si lo deseas */
-  text-align: center;
-}

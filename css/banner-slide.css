@@ -22,7 +22,7 @@
 /*Efectos transición*/
 
 .carousel-fade .carousel-item {
-  transition: opacity 1s ease-in-out; /* Ajusta la duración y el tipo de transición según tus preferencias */
+  transition: opacity 1.5s ease-in-out; /* Ajusta la duración y el tipo de transición según tus preferencias */
   opacity: 0; /* Establece la opacidad inicial en 0 para que los elementos se desvanezcan al entrar */
 }
 
